@@ -12,7 +12,9 @@ public class TaskInfoBeanDao {
 	
 	public final static List<TaskInfoBean> initTaskList = new ArrayList<>();
 	
-	
+	/**
+	 * 初始化定时任务信息列表（模拟持久化数据）
+	 */
 	public void initTaskInfoBeanList() {
 		
 		TaskInfoBean demoTask1 = new TaskInfoBean("Demo1", "demoService1", "0/10 * * * * ?");
@@ -23,7 +25,10 @@ public class TaskInfoBeanDao {
 		initTaskList.add(demoTask3);
 	}
 	
-	
+	/**
+	 * 获取所有定时任务信息
+	 * @return
+	 */
 	public List<TaskInfoBean> getAllTaskInfo() {
 		
 		if (initTaskList.size()==0) {
