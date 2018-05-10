@@ -1,0 +1,7 @@
+spring:
+  task:
+    pool:
+      corePoolSize: 10
+      maxPoolSize: 20
+      queueCapacity: 600
+      keepAliveSeconds: 1000
